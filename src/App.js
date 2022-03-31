@@ -1,3 +1,5 @@
+import AppRoutes from './routes';
+
 function App() {
   return (
     <div className="w-full bg-slate-50 h-screen flex flex-col items-center">
@@ -26,8 +28,8 @@ function App() {
           </a>
         </div>
       </header>
-      <main className="px-20 py-4 w-full h-full flex flex-col justify-center items-center">
-        <p className="text-3xl">Crud App with react, redux and redux saga.</p>
+      <main className="px-20 py-4 w-full h-full flex flex-col">
+        <AppRoutes />
       </main>
     </div>
   );
