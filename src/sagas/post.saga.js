@@ -17,7 +17,7 @@ function *fetchPostSaga({postId}) {
 
 function *deletePostSaga({ postId }) {
   try {
-    const post = yield deletePostApi(postId)
+    yield deletePostApi(postId)
     yield put(deletePostSuccess(postId));
   } catch (error) {
     yield put(deletePostFailure());

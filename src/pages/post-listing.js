@@ -11,7 +11,7 @@ export const PostsList = ({ posts, loading, requestFetchAllPosts, deletePostBegi
   const navigate = useNavigate();
   useEffect(() => {
     requestFetchAllPosts();
-  }, [])
+  }, [requestFetchAllPosts])
 
   function handleOnDelete(postId) {
     deletePostBegin(postId);
