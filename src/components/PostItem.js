@@ -8,9 +8,9 @@ function PostItem({ post, navigate, onDelete }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="px-4 py-4 mb-4 w-full bg-slate-100 border rounded-lg shadow">
+    <div className="px-4 py-4 mb-4 w-full bg-slate-100 dark:bg-gray-700 rounded-lg shadow">
       <div className="w-full flex justify-between">
-        <h2 className="text-lg lg:text-2xl font-medium capitalize">
+        <h2 className="text-lg lg:text-2xl font-medium capitalize dark:text-gray-100">
           <Link to={`/${post.id}`}>{post.title}</Link>
         </h2>
         <div className="relative">
@@ -33,7 +33,7 @@ function PostItem({ post, navigate, onDelete }) {
           )}
         </div>
       </div>
-      <p className="mt-4 text-sm lg:text-md text-gray-700">{post.body}</p>
+      <p className="mt-4 text-sm lg:text-md text-gray-700 dark:text-gray-50">{post.body}</p>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Globe } from 'react-feather';
 
 function BylineCard({ bylineInfo }) {
   return (
-    <div className="px-4 py-4 bg-white rounded-lg  shadow">
+    <div className="px-4 py-4 bg-white dark:bg-gray-700 rounded-lg shadow">
       <div className="flex">
         <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-red-800">
           <img
@@ -15,11 +15,11 @@ function BylineCard({ bylineInfo }) {
           />
         </div>
         <div className="ml-8">
-          <h4 className="text-lg lg:text-2xl font-bold uppercase text-cyan-600">
+          <h4 className="text-lg lg:text-2xl font-bold uppercase text-red-500 dark:text-red-600">
             {bylineInfo.name}
           </h4>
-          <span className="text-xs lg:text-md text-gray-500">@{bylineInfo.username}</span>
-          <p className="mt-2 text-md lg:text-lg font-normal">
+          <span className="text-xs lg:text-md text-gray-500 dark:text-gray-300">@{bylineInfo.username}</span>
+          <p className="mt-2 text-md lg:text-lg font-normal dark:text-gray-100">
             {bylineInfo.name} is a {bylineInfo.company.bs} at{" "}
             {bylineInfo.company.name}.
           </p>
