@@ -17,8 +17,8 @@ const PostDetail = ({ post, loading, requestFetchPost }) => {
     <div className='w-full flex flex-col'>
       {!loading && Object.keys(post).length > 0 && (
         <div className='w-full h-full flex flex-col'> 
-          <h1 className='text-5xl font-semibold capitalize'>{post.title}</h1>
-          <p className='mt-8'>{post.body}</p>
+          <h1 className='text-2xl lg:text-5xl font-semibold capitalize'>{post.title}</h1>
+          <p className='mt-8 text-lg lg:text-xl'>{post.body}</p>
           <div className='mt-4 w-full'>
             <span className='text-base font-thin'>Comments:</span>
             <PostComments comments={post.comments} />
